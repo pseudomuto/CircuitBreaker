@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		0AFE5A561C61975600230F9A /* OptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A551C61975600230F9A /* OptionsTests.swift */; };
 		68FA2364C9D62F5E150916D2 /* Pods_CircuitBreaker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C062B384CC4D02699E8B0B /* Pods_CircuitBreaker_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AFE5A551C61975600230F9A /* OptionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTests.swift; sourceTree = "<group>"; };
 		29EFE7D7110CB281D4EDDB85 /* Pods-CircuitBreaker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircuitBreaker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircuitBreaker_Tests/Pods-CircuitBreaker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4DB773645ECCAC3D99D5717C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		53F4633B6123E3C11EC8F9D3 /* CircuitBreaker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CircuitBreaker.podspec; path = ../CircuitBreaker.podspec; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CircuitBreaker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircuitBreaker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		806C8379F01A05F4756975D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A3C062B384CC4D02699E8B0B /* Pods_CircuitBreaker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircuitBreaker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC409FEEF573C9E0CD53BCD0 /* Pods-CircuitBreaker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircuitBreaker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircuitBreaker_Tests/Pods-CircuitBreaker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				0AFE5A551C61975600230F9A /* OptionsTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				0AFE5A561C61975600230F9A /* OptionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +245,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -290,6 +291,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -311,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC409FEEF573C9E0CD53BCD0 /* Pods-CircuitBreaker_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -331,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29EFE7D7110CB281D4EDDB85 /* Pods-CircuitBreaker_Tests.release.xcconfig */;
 			buildSettings = {
+				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

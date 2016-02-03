@@ -1,0 +1,20 @@
+PODS:
+  - CircuitBreaker (0.1.0)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+
+DEPENDENCIES:
+  - CircuitBreaker (from `../`)
+  - Nimble (= 3.0.0)
+  - Quick (~> 0.8.0)
+
+EXTERNAL SOURCES:
+  CircuitBreaker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CircuitBreaker: 1b4b81f11e2f0d8d1aafd541ef786960a15c3f5d
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+
+COCOAPODS: 0.39.0

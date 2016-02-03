@@ -1,0 +1,25 @@
+{
+  "name": "CircuitBreaker",
+  "version": "0.1.0",
+  "summary": "A short description of CircuitBreaker.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CircuitBreaker",
+  "license": "MIT",
+  "authors": {
+    "pseudomuto": "david.muto@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CircuitBreaker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "CircuitBreaker": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

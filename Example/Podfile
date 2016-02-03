@@ -3,8 +3,8 @@ use_frameworks!
 
 
 target 'CircuitBreaker_Tests', :exclusive => true do
-  pod 'CircuitBreaker', :path => '../'
-
+  pod 'CircuitBreaker', path: '../'
+  
   pod 'Quick', '~> 0.8.0'
   pod 'Nimble', '3.0.0'
 end
