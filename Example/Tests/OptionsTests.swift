@@ -13,22 +13,22 @@ import CircuitBreaker
 class OptionsTests: QuickSpec {
   override func spec() {
     describe("Option") {
-      var subject: CircuitBreaker.Options!
+      var subject: Options!
       
       context("with defaults") {
-        beforeEach { subject = CircuitBreaker.Options() }
+        beforeEach { subject = Options() }
         
         it("sets some 'reasonable' defaults") {
           expect(subject.errorThreshold).to(equal(2))
           expect(subject.successThreshold).to(equal(2))
-          expect(subject.invocationTimeout).to(equal(1000))
-          expect(subject.resetTimeout).to(equal(3000))
+          expect(subject.invocationTimeout).to(equal(1))
+          expect(subject.resetTimeout).to(equal(3))
         }
       }
       
       context("with memberwise initializer") {
         beforeEach {
-          subject = CircuitBreaker.Options(errorThreshold: 1, successThreshold: 1, invocationTimeout: 500, resetTimeout: 1000)
+          subject = Options(errorThreshold: 1, successThreshold: 1, invocationTimeout: 500, resetTimeout: 1000)
         }
         
         it("stores the supplied values") {

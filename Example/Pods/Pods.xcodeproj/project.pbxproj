@@ -12,13 +12,17 @@
 		02DF5BD2281BA10105A447F95FCF8CF3 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = B011BCE1507648ECA7586CF7DABF6F4C /* BeLogical.swift */; };
 		0492354DA7EF0C9068F7B4E8F74001B0 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25961731CF4F7537A5ECD61A000A150C /* FailureMessage.swift */; };
 		09D0292516B6E6D437F8E911917E52D7 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2543809E4D3D9755B94735346ACDFF03 /* QCKDSL.m */; };
+		0A1CD0EC1C6501FA00BFAA09 /* Breaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0EB1C6501FA00BFAA09 /* Breaker.swift */; };
+		0A1CD0F21C65245800BFAA09 /* ClosedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0F11C65245800BFAA09 /* ClosedState.swift */; };
+		0A1CD0F41C652CD600BFAA09 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0F31C652CD600BFAA09 /* Invoker.swift */; };
+		0A1CD0FA1C653A4900BFAA09 /* HalfOpenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0F91C653A4900BFAA09 /* HalfOpenState.swift */; };
+		0A2A225A1C68DB7400C4918E /* NSTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A22591C68DB7400C4918E /* NSTimeInterval.swift */; };
 		0A6E71555F55082003A3DB2B03CA85D2 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D42013D479CDC11E7882C7C0045B66B /* AsyncMatcherWrapper.swift */; };
 		0AFE5A541C61944500230F9A /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A531C61944500230F9A /* Options.swift */; };
 		0AFE5A581C61A67000230F9A /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A571C61A67000230F9A /* Assert.swift */; };
 		0AFE5A631C61AB8F00230F9A /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A621C61AB8F00230F9A /* State.swift */; };
 		0AFE5A651C61ABE600230F9A /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A641C61ABE600230F9A /* Switch.swift */; };
 		0AFE5A671C61AFB400230F9A /* OpenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A661C61AFB400230F9A /* OpenState.swift */; };
-		0AFE5A691C61B6E400230F9A /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A681C61B6E400230F9A /* Sync.swift */; };
 		0B7455CA33AB568FE90101FECDC1C977 /* Pods-CircuitBreaker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D157C9D0661896937446DA0526061E /* Pods-CircuitBreaker_Tests-dummy.m */; };
 		0DFB72AA7CE4EB9B83E7E5D3429F7D8B /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D4A64A54F414359EC782444B27597B /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F49254A4C560DD4696936F6080756DC /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4AE1E80CC4EA4F2E1FF17CA10A3D26 /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,12 +135,16 @@
 		021C4E135FFC34B4A74FD0560A640549 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Quick.modulemap; sourceTree = "<group>"; };
 		02297D692E5CA1B1C21CCCDA1853BA44 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
 		08A2998A727305B17FF7ECA2D45E0805 /* Pods-CircuitBreaker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CircuitBreaker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A1CD0EB1C6501FA00BFAA09 /* Breaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breaker.swift; sourceTree = "<group>"; };
+		0A1CD0F11C65245800BFAA09 /* ClosedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedState.swift; sourceTree = "<group>"; };
+		0A1CD0F31C652CD600BFAA09 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
+		0A1CD0F91C653A4900BFAA09 /* HalfOpenState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfOpenState.swift; sourceTree = "<group>"; };
+		0A2A22591C68DB7400C4918E /* NSTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimeInterval.swift; sourceTree = "<group>"; };
 		0AFE5A531C61944500230F9A /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		0AFE5A571C61A67000230F9A /* Assert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assert.swift; sourceTree = "<group>"; };
 		0AFE5A621C61AB8F00230F9A /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		0AFE5A641C61ABE600230F9A /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		0AFE5A661C61AFB400230F9A /* OpenState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenState.swift; sourceTree = "<group>"; };
-		0AFE5A681C61B6E400230F9A /* Sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sync.swift; sourceTree = "<group>"; };
 		0B0C995C72A44C02A9369FA2BDB1F4FF /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
 		0B53DF3C5B85F993313E9FA09386C167 /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
 		0D6721A89C83091A30CB9BD8568A00E1 /* Pods_CircuitBreaker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircuitBreaker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,11 +289,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2A22581C68DB5D00C4918E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A2A22591C68DB7400C4918E /* NSTimeInterval.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		0AFE5A5D1C61A93200230F9A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				0AFE5A571C61A67000230F9A /* Assert.swift */,
-				0AFE5A681C61B6E400230F9A /* Sync.swift */,
+				0A1CD0F31C652CD600BFAA09 /* Invoker.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -295,6 +311,8 @@
 			children = (
 				0AFE5A621C61AB8F00230F9A /* State.swift */,
 				0AFE5A661C61AFB400230F9A /* OpenState.swift */,
+				0A1CD0F11C65245800BFAA09 /* ClosedState.swift */,
+				0A1CD0F91C653A4900BFAA09 /* HalfOpenState.swift */,
 			);
 			name = States;
 			sourceTree = "<group>";
@@ -414,10 +432,12 @@
 		80A24928B8DE418769F0155C4034DA5B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0A2A22581C68DB5D00C4918E /* Extensions */,
 				0AFE5A611C61AB8300230F9A /* States */,
 				0AFE5A5D1C61A93200230F9A /* Utils */,
 				0AFE5A531C61944500230F9A /* Options.swift */,
 				0AFE5A641C61ABE600230F9A /* Switch.swift */,
+				0A1CD0EB1C6501FA00BFAA09 /* Breaker.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -738,9 +758,13 @@
 				354885951929558F27964A25A5C1B276 /* CircuitBreaker-dummy.m in Sources */,
 				0AFE5A581C61A67000230F9A /* Assert.swift in Sources */,
 				0AFE5A671C61AFB400230F9A /* OpenState.swift in Sources */,
+				0A2A225A1C68DB7400C4918E /* NSTimeInterval.swift in Sources */,
+				0A1CD0FA1C653A4900BFAA09 /* HalfOpenState.swift in Sources */,
+				0A1CD0EC1C6501FA00BFAA09 /* Breaker.swift in Sources */,
 				0AFE5A631C61AB8F00230F9A /* State.swift in Sources */,
-				0AFE5A691C61B6E400230F9A /* Sync.swift in Sources */,
 				0AFE5A651C61ABE600230F9A /* Switch.swift in Sources */,
+				0A1CD0F21C65245800BFAA09 /* ClosedState.swift in Sources */,
+				0A1CD0F41C652CD600BFAA09 /* Invoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

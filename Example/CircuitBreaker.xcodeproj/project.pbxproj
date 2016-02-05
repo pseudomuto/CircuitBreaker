@@ -7,11 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1CD0E31C642E0200BFAA09 /* OpenStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0E21C642E0200BFAA09 /* OpenStateTests.swift */; };
+		0A1CD0E81C64F1FB00BFAA09 /* MockSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0E71C64F1FB00BFAA09 /* MockSwitch.swift */; };
+		0A1CD0EA1C65011900BFAA09 /* MockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0E91C65011900BFAA09 /* MockHelper.swift */; };
+		0A1CD0EE1C65085000BFAA09 /* BreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0ED1C65085000BFAA09 /* BreakerTests.swift */; };
+		0A1CD0F61C6532A900BFAA09 /* MockInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0F51C6532A900BFAA09 /* MockInvoker.swift */; };
+		0A1CD0F81C65337100BFAA09 /* ClosedStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0F71C65337100BFAA09 /* ClosedStateTests.swift */; };
+		0A1CD0FC1C654BB700BFAA09 /* HalfOpenStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0FB1C654BB700BFAA09 /* HalfOpenStateTests.swift */; };
+		0A1CD0FF1C6640A700BFAA09 /* InvokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0FE1C6640A700BFAA09 /* InvokerTests.swift */; };
+		0A1CD1011C66460A00BFAA09 /* MockState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD1001C66460A00BFAA09 /* MockState.swift */; };
 		0AFE5A561C61975600230F9A /* OptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A551C61975600230F9A /* OptionsTests.swift */; };
 		68FA2364C9D62F5E150916D2 /* Pods_CircuitBreaker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C062B384CC4D02699E8B0B /* Pods_CircuitBreaker_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1CD0E21C642E0200BFAA09 /* OpenStateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenStateTests.swift; sourceTree = "<group>"; };
+		0A1CD0E71C64F1FB00BFAA09 /* MockSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSwitch.swift; sourceTree = "<group>"; };
+		0A1CD0E91C65011900BFAA09 /* MockHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHelper.swift; sourceTree = "<group>"; };
+		0A1CD0ED1C65085000BFAA09 /* BreakerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakerTests.swift; sourceTree = "<group>"; };
+		0A1CD0F51C6532A900BFAA09 /* MockInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInvoker.swift; sourceTree = "<group>"; };
+		0A1CD0F71C65337100BFAA09 /* ClosedStateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedStateTests.swift; sourceTree = "<group>"; };
+		0A1CD0FB1C654BB700BFAA09 /* HalfOpenStateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfOpenStateTests.swift; sourceTree = "<group>"; };
+		0A1CD0FE1C6640A700BFAA09 /* InvokerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvokerTests.swift; sourceTree = "<group>"; };
+		0A1CD1001C66460A00BFAA09 /* MockState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockState.swift; sourceTree = "<group>"; };
 		0AFE5A551C61975600230F9A /* OptionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTests.swift; sourceTree = "<group>"; };
 		29EFE7D7110CB281D4EDDB85 /* Pods-CircuitBreaker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircuitBreaker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircuitBreaker_Tests/Pods-CircuitBreaker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4DB773645ECCAC3D99D5717C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -35,6 +53,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1CD0E11C642DF100BFAA09 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CD0E21C642E0200BFAA09 /* OpenStateTests.swift */,
+				0A1CD0F71C65337100BFAA09 /* ClosedStateTests.swift */,
+				0A1CD0FB1C654BB700BFAA09 /* HalfOpenStateTests.swift */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		0A1CD0E61C64F1E400BFAA09 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CD0E91C65011900BFAA09 /* MockHelper.swift */,
+				0A1CD0E71C64F1FB00BFAA09 /* MockSwitch.swift */,
+				0A1CD0F51C6532A900BFAA09 /* MockInvoker.swift */,
+				0A1CD1001C66460A00BFAA09 /* MockState.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		0A1CD0FD1C66408C00BFAA09 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CD0FE1C6640A700BFAA09 /* InvokerTests.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		2DF414B1FFC18DB1BC4B20A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +112,12 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0A1CD0E61C64F1E400BFAA09 /* Mocks */,
+				0A1CD0E11C642DF100BFAA09 /* States */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				0A1CD0FD1C66408C00BFAA09 /* Utils */,
 				0AFE5A551C61975600230F9A /* OptionsTests.swift */,
+				0A1CD0ED1C65085000BFAA09 /* BreakerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -218,7 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1CD0F61C6532A900BFAA09 /* MockInvoker.swift in Sources */,
+				0A1CD0F81C65337100BFAA09 /* ClosedStateTests.swift in Sources */,
+				0A1CD0EE1C65085000BFAA09 /* BreakerTests.swift in Sources */,
 				0AFE5A561C61975600230F9A /* OptionsTests.swift in Sources */,
+				0A1CD0FC1C654BB700BFAA09 /* HalfOpenStateTests.swift in Sources */,
+				0A1CD0FF1C6640A700BFAA09 /* InvokerTests.swift in Sources */,
+				0A1CD0EA1C65011900BFAA09 /* MockHelper.swift in Sources */,
+				0A1CD0E81C64F1FB00BFAA09 /* MockSwitch.swift in Sources */,
+				0A1CD0E31C642E0200BFAA09 /* OpenStateTests.swift in Sources */,
+				0A1CD1011C66460A00BFAA09 /* MockState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

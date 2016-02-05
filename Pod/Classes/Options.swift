@@ -16,18 +16,14 @@ public struct Options {
     willSet(newThreshold) { Assert.positive(newThreshold) }
   }
   
-  public var invocationTimeout = 1000 {
-    willSet(newTimeout) { Assert.nonNegative(newTimeout) }
-  }
+  public var invocationTimeout: NSTimeInterval = 1.0
   
-  public var resetTimeout = 3000 {
-    willSet(newTimeout) { Assert.nonNegative(newTimeout) }
-  }
+  public var resetTimeout: NSTimeInterval = 3.0
   
   public init() {
   }
   
-  public init(errorThreshold: Int, successThreshold: Int, invocationTimeout: Int, resetTimeout: Int) {
+  public init(errorThreshold: Int, successThreshold: Int, invocationTimeout: NSTimeInterval, resetTimeout: NSTimeInterval) {
     self.errorThreshold    = errorThreshold
     self.successThreshold  = successThreshold
     self.invocationTimeout = invocationTimeout
