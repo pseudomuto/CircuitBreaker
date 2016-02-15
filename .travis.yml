@@ -3,10 +3,12 @@ osx_image: xcode7.2
 
 env:
   global:
-    WORKSPACE=Example/CircuitBreaker.xcworkspace
-    SCHEME=CircuitBreaker-Example
-    SDK=iphonesimulator
-    DEST="OS=9.2,name=iPhone 6"
+    - WORKSPACE=Example/CircuitBreaker.xcworkspace
+    - SCHEME=CircuitBreaker-Example
+    - SDK=iphonesimulator
+  matrix:
+    - DEST="OS=8.3,name=iPhone 6"
+    - DEST="OS=9.2,name=iPhone 6"
 
 rvm:
   - 2.2.3
