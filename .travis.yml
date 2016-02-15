@@ -11,8 +11,3 @@ cache:
 xcode_scheme: CircuitBreaker-Example
 xcode_sdk: iphonesimulator
 xcode_workspace: Example/CircuitBreaker.xcworkspace
-
-before_install:
-  - gem install cocoapods # Since Travis is not always on latest version
-  - pod install --project-directory=Example
-  - pod lib lint
