@@ -6,7 +6,7 @@ env:
     WORKSPACE=Example/CircuitBreaker.xcworkspace
     SCHEME=CircuitBreaker-Example
     SDK=iphonesimulator
-    DEST="os=9.2,name=iPhone 6"
+    DEST="OS=9.2,name=iPhone 6"
 
 rvm:
   - 2.2.3
@@ -15,8 +15,8 @@ cache:
   - cocoapods
 
 before_install:
-  - gem install xcpretty --no-document
+  - gem install cocoapods xcpretty --no-document
 
 script:
-  - set -o pipefail && xcodebuild test -workspace $WORKSPACE -scheme $SCHEME -sdk $SDK -destination $DEST | xcpretty
+  - set -o pipefail && xcodebuild test -workspace $WORKSPACE -scheme $SCHEME -sdk $SDK -destination "$DEST" | xcpretty
   - pod lib lint
