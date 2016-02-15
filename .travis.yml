@@ -11,3 +11,6 @@ cache:
 xcode_scheme: CircuitBreaker-Example
 xcode_sdk: iphonesimulator
 xcode_workspace: Example/CircuitBreaker.xcworkspace
+
+before_install:
+  - gem install bundler
