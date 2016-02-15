@@ -16,9 +16,23 @@
 		0A1CD0FC1C654BB700BFAA09 /* HalfOpenStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0FB1C654BB700BFAA09 /* HalfOpenStateTests.swift */; };
 		0A1CD0FF1C6640A700BFAA09 /* InvokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD0FE1C6640A700BFAA09 /* InvokerTests.swift */; };
 		0A1CD1011C66460A00BFAA09 /* MockState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CD1001C66460A00BFAA09 /* MockState.swift */; };
+		0A24439C1C726A80007DE3B3 /* Pods_CircuitBreaker_Tests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3C062B384CC4D02699E8B0B /* Pods_CircuitBreaker_Tests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AFE5A561C61975600230F9A /* OptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE5A551C61975600230F9A /* OptionsTests.swift */; };
 		68FA2364C9D62F5E150916D2 /* Pods_CircuitBreaker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C062B384CC4D02699E8B0B /* Pods_CircuitBreaker_Tests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A24439B1C726A6E007DE3B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A24439C1C726A80007DE3B3 /* Pods_CircuitBreaker_Tests.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A1CD0E21C642E0200BFAA09 /* OpenStateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenStateTests.swift; sourceTree = "<group>"; };
@@ -156,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CircuitBreaker_Tests" */;
 			buildPhases = (
+				0A24439B1C726A6E007DE3B3 /* CopyFiles */,
 				12A353664A5AD7385C74BC8C /* Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,

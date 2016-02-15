@@ -13,4 +13,4 @@ xcode_sdk: iphonesimulator
 xcode_workspace: Example/CircuitBreaker.xcworkspace
 
 before_install:
-  - gem install bundler
+  - gem install bundler --no-document
