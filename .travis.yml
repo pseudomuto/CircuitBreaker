@@ -19,6 +19,12 @@ cache:
 before_install:
   - gem install cocoapods xcpretty --no-document
 
-script:
-  - set -o pipefail && xcodebuild test -workspace $WORKSPACE -scheme $SCHEME -sdk $SDK -destination "$DEST" | xcpretty
-  - pod lib lint
+script: ./script/build.sh
+
+deploy:
+  provider: script
+  script: ./script/release.sh
+  skip_cleanup: true
+  on:
+    tags: true
+    condition: $DEST = "OS=9.2,name=iPhone 6"
