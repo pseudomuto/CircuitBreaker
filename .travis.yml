@@ -8,9 +8,9 @@ cache:
   - bundler
   - cocoapods
 
-xcode_scheme: CircuitBreaker-Example
-xcode_sdk: iphonesimulator9.2
-xcode_workspace: Example/CircuitBreaker.xcworkspace
-
 before_install:
   - gem install bundler --no-document
+
+script:
+  - set -o pipefail && xcodebuild test -workspace Example/CircuitBreaker.xcworkspace -scheme CircuitBreaker-Example -sdk iphonesimulator -destination "OS=9.2,name=iPhone 6" | xcpretty
+  - pod lib lint
