@@ -1,6 +1,0 @@
-framework module Pods_CircuitBreaker_Tests {
-  umbrella header "Pods-CircuitBreaker_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

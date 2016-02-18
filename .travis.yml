@@ -3,12 +3,11 @@ osx_image: xcode7.2
 
 env:
   global:
-    - WORKSPACE=Example/CircuitBreaker.xcworkspace
-    - SCHEME=CircuitBreaker-Example
-    - SDK=iphonesimulator
+    - WORKSPACE=CircuitBreaker.xcworkspace
   matrix:
-    - DEST="OS=8.3,name=iPhone 6"
-    - DEST="OS=9.2,name=iPhone 6"
+    - PLATFORM=ios VERSION=8.3 SCHEME="CircuitBreaker iOS"
+    - PLATFORM=ios VERSION=9.2 SCHEME="CircuitBreaker iOS"
+    - PLATFORM=osx VERSION=10.11 SCHEME="CircuitBreaker OSX"
 
 rvm:
   - 2.2.3
@@ -19,12 +18,4 @@ cache:
 before_install:
   - gem install cocoapods xcpretty --no-document
 
-script: ./script/build.sh
-
-deploy:
-  provider: script
-  script: ./script/release.sh
-  skip_cleanup: true
-  on:
-    tags: true
-    condition: $DEST = "OS=9.2,name=iPhone 6"
+script: ./script/test.sh

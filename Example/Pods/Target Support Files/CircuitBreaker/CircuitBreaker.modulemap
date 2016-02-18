@@ -1,6 +1,0 @@
-framework module CircuitBreaker {
-  umbrella header "CircuitBreaker-umbrella.h"
-
-  export *
-  module * { export * }
-}
