@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author   = { "pseudomuto" => "david.muto@gmail.com" }
 
   s.source       = { git: "https://github.com/pseudomuto/CircuitBreaker.git", tag: s.version.to_s }
-  s.source_files = "Pod/Classes/**/*"
+  s.source_files = "Source/**/*.swift"
 
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
