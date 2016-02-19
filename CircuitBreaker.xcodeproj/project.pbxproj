@@ -105,6 +105,7 @@
 		0ACFA9E21C766AFE0023DEFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0ACFA9E81C766B490023DEFB /* release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = release.sh; sourceTree = "<group>"; };
 		0ACFA9E91C7674980023DEFB /* test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
+		0ACFA9EC1C77DB800023DEFB /* CircuitBreaker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CircuitBreaker.podspec; sourceTree = SOURCE_ROOT; };
 		5A97E7CE7AE467BB8B9BB8F5 /* Pods-CircuitBreaker OSX Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircuitBreaker OSX Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircuitBreaker OSX Tests/Pods-CircuitBreaker OSX Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E321E5081E5076A912DE85C /* Pods-CircuitBreaker iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircuitBreaker iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircuitBreaker iOS Tests/Pods-CircuitBreaker iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C2BD9A0506204143CA081BC2 /* Pods-CircuitBreaker OSX Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircuitBreaker OSX Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircuitBreaker OSX Tests/Pods-CircuitBreaker OSX Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 				0ACFA9E11C766AFE0023DEFB /* LICENSE */,
 				0ACFA9E21C766AFE0023DEFB /* README.md */,
 				0A79C2191C750B5A00439022 /* Info.plist */,
+				0ACFA9EC1C77DB800023DEFB /* CircuitBreaker.podspec */,
 				0A79C2181C750B3200439022 /* CircuitBreaker.h */,
 			);
 			name = "Supporting Files";
