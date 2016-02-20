@@ -14,7 +14,7 @@ class CircuitBreakerTests: QuickSpec {
   enum TestError: ErrorType { case Error }
   
   override func spec() {
-    describe("Breaker") {
+    describe("CircuitBreaker") {
       var subject: CircuitBreaker!
       
       let options = Options(
@@ -110,7 +110,7 @@ class CircuitBreakerTests: QuickSpec {
           expect { try subject.invoke(thrower) }.to(throwError(TestError.Error))
           expect(subject.isOpen).to(beTrue())
 
-          expect(subject.isHalfOpen).toEventually(beTrue(), timeout: 0.6)
+          expect(subject.isHalfOpen).toEventually(beTrue(), timeout: options.resetTimeout * 2)
         }
       }
 
